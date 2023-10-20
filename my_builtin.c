@@ -13,12 +13,12 @@ int _mycd(info_t *info)
 
 	c = getcwd(buffer, 1024);
 	if (!c)
-	_puts("TOWHAT: >>getcwd failure msg here<<\n");
+	_puts("TODO: >>getcwd failure msg here<<\n");
 	if (!info->argv[1])
 	{
 	dir = _getenv(info, "SAFE=");
 	if (!dir)
-	chdir_ret = /* TOWHAT: what should this be? */
+	chdir_ret = /* TODO:  what should this be? */
 	chdir((dir = _getenv(info, "PWD=")) ? dir : "/");
 	else
 	chdir_ret = chdir(dir);

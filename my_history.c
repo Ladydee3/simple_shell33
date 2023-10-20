@@ -44,7 +44,7 @@ for (node = info->history; node; node = node->next)
 _putsfd(node->str, fd);
 _putfd('\n', fd);
 }
-_putsfd(BUF_FLUSH, fd);
+_putfd(BUF_FLUSH, fd);
 close(fd);
 return (1);
 }
@@ -136,7 +136,7 @@ char *get_history_file(info_t *info)
 	buf[0] = 0;
 	_strcpy(buf, dir);
 	_strcat(buf, "/");
-	_strcat(buf, LIST_FILE);
+	_strcat(buf, HIST_FILE);
 	return (buf);
 }
 

@@ -120,8 +120,8 @@ int _eputchar(char);
 /* loophsh.c */
 int loophsh(char **);
 
-/* my_shloop.c */
-void finf_cmd(info_t *);
+/* my_shell_loop.c */
+void find_cmd(info_t *);
 int hsh(info_t *, char **);
 int find_buitin(info_t *);
 void fork_cmd(info_t *);
@@ -198,7 +198,7 @@ int print_d(int, int);
 int replace_vars(info_t *);
 int replace_string(char **, char *);
 int is_chain(info_t *, char *, size_t *);
-void check_chain(info_t *, char *, size_t *, size_t);
+void check_chain(info_t *, char *, size_t *, size_t, size_t);
 int replace_alias(info_t *);
 
 /* my_getenv */
